@@ -13,8 +13,9 @@ class Grupo:
             self._asignaturas.append(Asignatura(x))
 
     def agregarAlumno(self, alumno, *lista):
-        lista.append(alumno)
-        self.listadoAlumnos = self.listadoAlumnos + lista
+        lista1=lista
+        lista1.append(alumno)
+        self.listadoAlumnos = self.listadoAlumnos + lista1
 
     def __str__(self):
         return "Grupo de estudiantes: "+self._grupo
